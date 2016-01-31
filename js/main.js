@@ -61,6 +61,7 @@ function orientationChanged (orientationEvent) {
   var yImagePosition = (-1 * tanOfBeta * backgroundDistance) + yOffset
   //calculate the distance to shift the background image horizontally
   //now we need to adjust for the device's orientation
+  var homescreen = document.querySelector("#homescreen1");
   homescreen.style.backgroundPosition = xImagePosition + "px " + yImagePosition + "px";
   //set the backgroundimage position to  xImagePosition yImagePosition
 }
