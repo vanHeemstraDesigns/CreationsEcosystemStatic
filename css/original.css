@@ -47,7 +47,7 @@ position: absolute;
 -webkit-transform-origin: 50% 50%;
 left: 2%;
 opacity: .95;
-background-image: url('images/fish.jpg');
+background-image: url('../images/fish.jpg');
 background-repeat: no-repeat; }
 
 .homescreen figure {
