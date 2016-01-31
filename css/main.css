@@ -97,7 +97,6 @@ header {
 
 #controlcenter {
   width: 100%;
-  max-width: 480px;
   height: 80%;
   top: 20%;
   position: absolute;
