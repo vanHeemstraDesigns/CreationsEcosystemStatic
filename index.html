@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Creations Ecosystem</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!-- DONE BY HEAD JS NOW <link rel="stylesheet" type="text/css" href="css/main.css" />-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 </head>
 <body>
@@ -117,6 +117,18 @@
     <option value="images/NSLinenBackgroundPattern.png">Linen Light</option>
   </select>
   </footer>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/head.min.js"></script>
+    head.ready(document, function() {
+      head.test(
+        (head.browser.ie && head.browser.version === 8),
+        ["js/main.js"], // we could ask for an ie8 specific file here
+        ["js/main.js"],
+        function() {
+          // run callback
+          head.load("css/main.css");
+        }
+      );
+    });
+  </script>
 </body>
 </html>
