@@ -26,7 +26,7 @@ max-width: 480px
 main {
 /*background-image: url('girls.jpg'); */
 /*background-image: url('images/wds12.jpg'); */
-background-image: url('images/fish.jpg');
+background-image: url('../images/fish.jpg');
 position: absolute;
 /*background-size: 120%;*/
 background-repeat: no-repeat;
