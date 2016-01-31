@@ -1,0 +1,2 @@
+# CreationsEcosystemStatic
+Creations Ecosystem - Static
