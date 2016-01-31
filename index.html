@@ -119,6 +119,7 @@
   </footer>
   <script type="text/javascript" src="js/head.min.js"></script>
     head.ready(document, function() {
+      console.log('inside head.ready');
       head.test(
         (head.browser.ie && head.browser.version === 8),
         ["js/main.js"], // we could ask for an ie8 specific file here
