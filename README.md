@@ -39,6 +39,11 @@ What all these components have in common:
 2) Add a store listener in componentDidMount, remove it in componentWillUnmount.
 3) Add onChange method which updates component's state whenever the store is updated.
 
+## Schema vs. Model
+
+A schema is just a representation of your data in MongoDB. This is where you can enforce a certain field to be of particular type. A field can also be required, unique or contain only specified characters.
+While a schema is just an abstract representation of the data, a model on the other hand is a more practical object with methods to query, remove, update and save data from/to MongoDB.
+
 ## HTML5 History API
 
 We are using createBrowserHistory to enable HTML5 History API in order to make URLs look pretty. For example, it navigates to http://localhost:3000/add instead of http://localhost:3000/#add. Since we are building an Isomorphic React application (rendered on the server and the client) we do not have to do any hacky wildcard redirects on the server to enable this support. It just works out of the box.
