@@ -12,9 +12,13 @@ In another tab, run 'npm run watch' to start the Node.js server and automaticall
 
 P.S. In package.json we have made sure 'gulp' and 'nodemon' are installed globally.
 
+Both gulp and npm run watch processes will take care of everything for us. We no longer need to worry about re-compiling the app after adding new React components or restarting the Express app after making changes to server.js.
+
 # Sources:
 
 Overall structure based on the tutorial at http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/ with its source code on Github at https://github.com/sahat/newedenfaces-react
+
+====== WE HAVE SO FAR IMPLEMENTED UP TO Step 11. Add Character Component ======
 
 ## Main.js
 
@@ -97,6 +101,9 @@ Notice the difference in syntax.
 
 A Flux Architecture Crash Course is provided on http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/
 
+## Toastr
+
+We will be using Toastr (http://codeseven.github.io/toastr/demo.html) JavaScript library for notifications. 
 
 
 
