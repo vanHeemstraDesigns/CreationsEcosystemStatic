@@ -2,11 +2,35 @@
 # CreationsEcosystemStatic
 Creations Ecosystem - Static
 
+How to run:
 
-Sources:
+Open two Terminal tabs. 
+
+In one tab run 'npm run gulp' to build the app, concatenate vendor files, compile LESS stylesheets and watch for file changes. 
+
+In another tab, run 'npm run watch' to start the Node.js server and automatically restart the process on file changes.
+
+P.S. In package.json we have made sure 'gulp' and 'nodemon' are installed globally.
+
+# Sources:
 
 Overall structure based on the tutorial at http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/ with its source code on Github at https://github.com/sahat/newedenfaces-react
 
+## Main.js
+
+The main.js is the entry point for our React application. We use it in gulpfile.js where Browserify will traverse the entire tree of dependencies and generate the final bundle.js file. You will rarely have to touch this file after its initial setup.
+
+## React Router
+
+React Router bootstraps the routes from routes.js file, matches them against a URL, and then executes the appropriate callback handler, which in this case means rendering a React component into <div id="app"></div>. But how does it know which component to render? Well, for example, if we are on / URL path, then {this.props.children} will render the Home component, because that's what we have specified in routes.js.
+
+## React Routes (Server-Side)
+
+To be found as middleware inside server.js.
+
+## HTML5 History API
+
+We are using createBrowserHistory to enable HTML5 History API in order to make URLs look pretty. For example, it navigates to http://localhost:3000/add instead of http://localhost:3000/#add. Since we are building an Isomorphic React application (rendered on the server and the client) we do not have to do any hacky wildcard redirects on the server to enable this support. It just works out of the box.
 
 ## NPM Modules
 
@@ -34,6 +58,10 @@ xml2js	        For parsing XML response from EVE Online API.
 
 Run npm install in the Terminal to install the packages that we specified in the package.json.
 
+## Gulp vs. Grunt
+
+See http://andy-carter.com/blog/a-beginners-guide-to-the-task-runner-gulp
+
 ## Gulp Tasks
 
 Gulp Task	Description
@@ -50,3 +78,26 @@ build	            Runs all of the above tasks then exits.
 ## Bower
 
 Run bower install and wait for the packages to be downloaded and installed into the bower_components directory. You can change that path using the .bowerrc file.
+
+## ES5 versus ES6
+
+An ES6 Crash Course is provided on http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/
+
+## ReactJS
+
+A ReactJS Crash Course is provided on http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/
+
+See the book 'Thinking in React' at https://facebook.github.io/react/docs/thinking-in-react.html
+
+## JS vs. JSX
+
+Notice the difference in syntax.
+
+## Flux Architecture
+
+A Flux Architecture Crash Course is provided on http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/
+
+
+
+
+
