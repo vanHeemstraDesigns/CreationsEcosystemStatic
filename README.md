@@ -18,7 +18,7 @@ Both gulp and npm run watch processes will take care of everything for us. We no
 
 Overall structure based on the tutorial at http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/ with its source code on Github at https://github.com/sahat/newedenfaces-react
 
-====== WE HAVE SO FAR IMPLEMENTED UP TO Step 11. Add Character Component ======
+====== WE HAVE SO FAR IMPLEMENTED UP TO Step 12. Database Schema ======
 
 ## Main.js
 
