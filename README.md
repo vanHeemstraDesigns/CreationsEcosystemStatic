@@ -32,6 +32,13 @@ React Router bootstraps the routes from routes.js file, matches them against a U
 
 To be found as middleware inside server.js.
 
+## React Components
+
+What all these components have in common:
+1) Set the initial component state to what's in the store.
+2) Add a store listener in componentDidMount, remove it in componentWillUnmount.
+3) Add onChange method which updates component's state whenever the store is updated.
+
 ## HTML5 History API
 
 We are using createBrowserHistory to enable HTML5 History API in order to make URLs look pretty. For example, it navigates to http://localhost:3000/add instead of http://localhost:3000/#add. Since we are building an Isomorphic React application (rendered on the server and the client) we do not have to do any hacky wildcard redirects on the server to enable this support. It just works out of the box.
