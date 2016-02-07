@@ -4,7 +4,7 @@ Creations Ecosystem - Static
 
 How to run:
 
-Open two Terminal tabs. 
+Open two Terminal tabs.
 
 In one tab run 'npm run gulp' to build the app, concatenate vendor files, compile LESS stylesheets and watch for file changes. 
 
@@ -14,11 +14,15 @@ P.S. In package.json we have made sure 'gulp' and 'nodemon' are installed global
 
 Both gulp and npm run watch processes will take care of everything for us. We no longer need to worry about re-compiling the app after adding new React components or restarting the Express app after making changes to server.js.
 
+## MongoDB
+
+Open a new tab in Terminal and run mongod. If you are on Windows, you will need to open mongod.exe in the directory where you installed MongoDB.
+
 # Sources:
 
 Overall structure based on the tutorial at http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/ with its source code on Github at https://github.com/sahat/newedenfaces-react
 
-====== WE HAVE SO FAR IMPLEMENTED UP TO Step 12. Database Schema ======
+====== WE HAVE SO FAR IMPLEMENTED UP TO Step 13. Express API Routes (1 of 2) ======
 
 ## Main.js
 

@@ -1,3 +1,4 @@
+// Core Node.js modules — path, querystring, http.
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
@@ -12,6 +13,13 @@ var ReactDOM = require('react-dom/server');
 var Router = require('react-router');
 var routes = require('./app/routes');
 
+// Third-party NPM libraries — mongoose, express, request.
+var mongoose = require('mongoose');
+
+// Application files — controllers, models, config.
+var Character = require('./models/character');
+var config = require('./config');
+
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
@@ -20,6 +28,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Database
+// We will set the database hostname in config.js to avoid hard-coding the value here.
+mongoose.connect(config.database);
+mongoose.connection.on('error', function() {
+  console.info('Error: Could not connect to MongoDB. Did you forget to run `mongod`?');
+});
+
+// Middleware
 app.use(function(req, res) {
   Router.match({ routes: routes.default, location: req.url }, function(err, redirectLocation, renderProps) {
     if (err) {
