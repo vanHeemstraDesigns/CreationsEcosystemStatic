@@ -18,6 +18,8 @@ Both gulp and npm run watch processes will take care of everything for us. We no
 
 Open a new tab in Terminal and run mongod. If you are on Windows, you will need to open mongod.exe in the directory where you installed MongoDB.
 
+On Windows, type <path to mongodb/bin/>mongod.exe <ENTER> to start Mongo demon (the database server).
+
 # Sources:
 
 Overall structure based on the tutorial at http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/ with its source code on Github at https://github.com/sahat/newedenfaces-react
