@@ -24,7 +24,7 @@ On Windows, type <path to mongodb/bin/>mongod.exe <ENTER> to start Mongo demon (
 
 Overall structure based on the tutorial at http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/ with its source code on Github at https://github.com/sahat/newedenfaces-react
 
-====== WE HAVE SO FAR IMPLEMENTED UP TO Step 18. Stats Component ======
+====== WE HAVE SO FAR IMPLEMENTED UP TO Step Step 19. Deployment ======
 
 ## Main.js
 
