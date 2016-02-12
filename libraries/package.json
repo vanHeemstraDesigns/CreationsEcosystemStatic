@@ -1,0 +1,22 @@
+{
+  "name": "libraries",
+  "version": "1.0.0",
+  "description": "The Libraries Subtree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanHeemstraSystems/libraries.git"
+  },
+  "author": "van Heemstra Systems",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanHeemstraSystems/libraries/issues"
+  },
+  "homepage": "https://github.com/vanHeemstraSystems/libraries#readme",
+  "dependencies": {
+    "alt": "^0.18.2"
+  }
+}
