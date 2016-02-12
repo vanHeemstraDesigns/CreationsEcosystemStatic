@@ -1,0 +1,12 @@
+/* main.css
+ * Gets included through webpack.config.js
+ */
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 13px;
+  line-height: 20px;
+  background: yellow;
+}

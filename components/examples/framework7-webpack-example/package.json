@@ -1,0 +1,28 @@
+{
+  "name": "components-examples-framework7-webpack-example",
+  "version": "1.0.0",
+  "description": "Sample project that uses components",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack-production.config.js --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanheemstrasystems/components.git"
+  },
+  "author": "van Heemstra Systems",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanheemstrasystems/components/issues"
+  },
+  "homepage": "https://github.com/vanheemstrasystems/components#readme",
+  "devDependencies": {
+    "webpack": "^1.12.11"
+  },
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
+    "react": "^0.14.3"
+  }
+}
