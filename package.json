@@ -12,13 +12,13 @@
     "url": "https://github.com/vanHeemstraDesigns/CreationsEcosystemStatic/issues"
   },
   "homepage": "https://github.com/vanHeemstraDesigns/CreationsEcosystemStatic#readme",  
-  "main": "server.js",
+  "main": "servers/creations_ecosystem_server.js",
   "scripts": {
     "preinstall": "sudo npm install -g gulp nodemon",
     "gulp": "gulp",
     "nodemon": "nodemon",
-    "start": "node server.js",
-    "watch": "nodemon server.js",
+    "start": "node servers/creations_ecosystem_server.js",
+    "watch": "nodemon servers/creations_ecosystem_server.js",
     "postinstall": "bower install && gulp build"
   },
   "babel": {
