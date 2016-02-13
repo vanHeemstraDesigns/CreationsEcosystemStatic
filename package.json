@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/vanHeemstraDesigns/CreationsEcosystemStatic.git"
   },
-  "author": "",
+  "author": "van Heemstra Designs",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vanHeemstraDesigns/CreationsEcosystemStatic/issues"
@@ -14,7 +14,7 @@
   "homepage": "https://github.com/vanHeemstraDesigns/CreationsEcosystemStatic#readme",  
   "main": "server.js",
   "scripts": {
-    "preinstall": "npm install -g gulp nodemon",
+    "preinstall": "sudo npm install -g gulp nodemon",
     "gulp": "gulp",
     "nodemon": "nodemon",
     "start": "node server.js",
@@ -65,6 +65,5 @@
     "gulp-util": "^3.0.7",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.0"
-  },
-  "license": "MIT"
+  }
 }
