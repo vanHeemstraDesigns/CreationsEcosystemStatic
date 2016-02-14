@@ -30,6 +30,8 @@ See also http://headjs.com
 ### Pass - Hash and compare passwords with pbkdf2
 See also https://github.com/visionmedia/node-pwd
 
+### React - A JavaScript library for building user interfaces
+See also https://facebook.github.io/react/
 
 ### Require - A file and module loader for JavaScript
 See also http://github.com/jrburke/requirejs
