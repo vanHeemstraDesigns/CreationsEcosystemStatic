@@ -30,6 +30,10 @@ Overall structure based on the tutorial at http://sahatyalkabov.com/create-a-cha
 
 The main.js is the entry point for our React application. We use it in gulpfile.js where Browserify will traverse the entire tree of dependencies and generate the final bundle.js file. You will rarely have to touch this file after its initial setup.
 
+## React
+
+A very quick but clear tutorial about React is https://egghead.io/lessons/react-react-in-7-minutes
+
 ## React Router
 
 React Router bootstraps the routes from routes.js file, matches them against a URL, and then executes the appropriate callback handler, which in this case means rendering a React component into <div id="app"></div>. But how does it know which component to render? Well, for example, if we are on / URL path, then {this.props.children} will render the Home component, because that's what we have specified in routes.js.
