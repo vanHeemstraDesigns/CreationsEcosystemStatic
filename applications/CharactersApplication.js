@@ -9,5 +9,5 @@ class CharactersApplication extends React.Component {
     );
   }
 }
- 
+
 export default CharactersApplication;
