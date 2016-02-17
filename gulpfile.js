@@ -60,7 +60,7 @@ gulp.task('browserify-vendor', function() {
  |--------------------------------------------------------------------------
  */
 gulp.task('browserify', ['browserify-vendor'], function() {
-  return browserify({ entries: 'app/main.js', debug: true })
+  return browserify({ entries: 'main.js', debug: true })
     .external(dependencies)
     .transform(babelify, { presets: ['es2015', 'react'] })
     .pipe(streamify(sourcemaps.init({ loadMaps: true })))
