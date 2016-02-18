@@ -14,7 +14,7 @@
   "homepage": "https://github.com/vanHeemstraDesigns/CreationsEcosystemStatic#readme",
   "main": "servers/creations_ecosystem_server.js",
   "scripts": {
-    "preinstall": "sudo npm install -g gulp nodemon",
+    "preinstall": "npm install -g gulp nodemon",
     "gulp": "gulp",
     "nodemon": "nodemon",
     "start": "node servers/creations_ecosystem_server.js",
