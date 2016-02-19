@@ -1,5 +1,5 @@
 import {assign} from 'underscore';
-import alt from '../alt';
+import alt from '../libraries/alt';
 import StatsActions from '../actions/StatsActions';
 
 class StatsStore {

@@ -1,4 +1,4 @@
-import alt from '../alt';
+import alt from '../libraries/alt';
 import NavbarActions from '../actions/NavbarActions';
 
 class NavbarStore {
