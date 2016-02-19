@@ -1,8 +1,8 @@
-import React from 'react';
-import {Link} from 'react-router';
-import HomeStore from '../stores/HomeStore'
-import HomeActions from '../actions/HomeActions';
-import {first, without, findWhere} from 'underscore';
+import React from '../libraries/react';
+import {Link} from '../libraries/react-router';
+import HomeStore from '../local_stores/HomeStore'
+import HomeActions from '../local_actions/HomeActions';
+import {first, without, findWhere} from '../libraries/underscore';
 
 class Home extends React.Component {
 

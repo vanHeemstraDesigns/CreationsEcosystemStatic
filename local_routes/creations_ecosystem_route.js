@@ -1,8 +1,8 @@
-import React from 'react';
-import {Route} from 'react-router';
-import App from './components/App';
-import Home from './components/Home';
- 
+import React from '../libraries/react';
+import {Route} from '../libraries/react-router';
+import App from '../local_components/App';
+import Home from '../local_components/Home';
+
 export default (
   <Route component={App}>
     <Route path='/' component={Home} />
