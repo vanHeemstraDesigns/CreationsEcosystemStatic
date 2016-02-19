@@ -1,6 +1,6 @@
-import React from 'react';
-import StatsStore from '../stores/StatsStore'
-import StatsActions from '../actions/StatsActions';
+import React from '../libraries/react';
+import StatsStore from '../local_stores/StatsStore'
+import StatsActions from '../local_actions/StatsActions';
 
 class Stats extends React.Component {
   constructor(props) {

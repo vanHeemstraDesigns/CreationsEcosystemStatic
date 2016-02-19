@@ -1,6 +1,6 @@
-import React from 'react';
-import CharacterStore from '../stores/CharacterStore';
-import CharacterActions from '../actions/CharacterActions';
+import React from '../libraries/react';
+import CharacterStore from '../local_stores/CharacterStore';
+import CharacterActions from '../local_actions/CharacterActions';
 
 class Character extends React.Component {
   constructor(props) {

@@ -1,8 +1,8 @@
-import React from 'react';
-import {Link} from 'react-router';
-import {isEqual} from 'underscore';
-import CharacterListStore from '../stores/CharacterListStore';
-import CharacterListActions from '../actions/CharacterListActions';
+import React from '../libraries/react';
+import {Link} from '../libraries/react-router';
+import {isEqual} from '../libraries/underscore';
+import CharacterListStore from '../local_stores/CharacterListStore';
+import CharacterListActions from '../local_actions/CharacterListActions';
 
 class CharacterList extends React.Component {
   constructor(props) {
