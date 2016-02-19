@@ -1,5 +1,5 @@
-import React from '../libraries/react';
-import {Link} from '../libraries/react-router';
+import React from '../local_libraries/react';
+import {Link} from '../local_libraries/react-router';
 import NavbarStore from '../local_stores/NavbarStore';
 import NavbarActions from '../local_actions/NavbarActions';
 

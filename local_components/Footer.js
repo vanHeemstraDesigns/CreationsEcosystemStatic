@@ -1,5 +1,5 @@
-import React from '../libraries/react';
-import {Link} from '../libraries/react-router';
+import React from '../local_libraries/react';
+import {Link} from '../local_libraries/react-router';
 import FooterStore from '../local_stores/FooterStore'
 import FooterActions from '../local_actions/FooterActions';
 

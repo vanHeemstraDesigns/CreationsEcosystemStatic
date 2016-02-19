@@ -1,4 +1,4 @@
-import React from '../libraries/react';
+import React from '../local_libraries/react';
 import AddCharacterStore from '../local_stores/AddCharacterStore';
 import AddCharacterActions from '../local_actions/AddCharacterActions';
 

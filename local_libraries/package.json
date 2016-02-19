@@ -1,0 +1,27 @@
+{
+  "name": "local_libraries",
+  "version": "1.0.0",
+  "description": "The Local Libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanHeemstraDesigns/CreationsEcosystemStatic.git"
+  },
+  "author": "van Heemstra Designs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanHeemstraDesigns/CreationsEcosystemStatic/issues"
+  },
+  "homepage": "https://github.com/vanHeemstraDesigns/CreationsEcosystemStatic#readme",
+  "dependencies": {
+    "alt": "^0.18.2",
+    "history": "^2.0.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0",
+    "underscore": "^1.8.3"
+  }
+}

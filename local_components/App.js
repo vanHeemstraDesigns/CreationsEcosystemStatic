@@ -1,6 +1,6 @@
-import React from '../libraries/react';
-import Footer from './Footer';
-import Navbar from './Navbar';
+import React from '../local_libraries/react';
+import Footer from '../local_components/Footer';
+import Navbar from '../local_components/Navbar';
 
 class App extends React.Component {
   render() {

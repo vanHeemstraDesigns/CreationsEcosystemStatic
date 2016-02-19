@@ -1,6 +1,6 @@
-import React from '../libraries/react';
-import {Link} from '../libraries/react-router';
-import {isEqual} from '../libraries/underscore';
+import React from '../local_libraries/react';
+import {Link} from '../local_libraries/react-router';
+import {isEqual} from '../local_libraries/underscore';
 import CharacterListStore from '../local_stores/CharacterListStore';
 import CharacterListActions from '../local_actions/CharacterListActions';
 

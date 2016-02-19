@@ -1,5 +1,5 @@
-import alt from '../libraries/alt';
-import AddCharacterActions from '../actions/AddCharacterActions';
+import alt from '../local_libraries/alt';
+import AddCharacterActions from '../local_actions/AddCharacterActions';
 
 class AddCharacterStore {
   constructor() {

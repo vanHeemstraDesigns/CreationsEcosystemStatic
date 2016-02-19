@@ -1,5 +1,5 @@
-import alt from '../libraries/alt';
-import FooterActions from '../actions/FooterActions';
+import alt from '../local_libraries/alt';
+import FooterActions from '../local_actions/FooterActions';
 
 class FooterStore {
   constructor() {

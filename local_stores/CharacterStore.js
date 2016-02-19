@@ -1,6 +1,6 @@
-import {assign, contains} from 'underscore';
-import alt from '../libraries/alt';
-import CharacterActions from '../actions/CharacterActions';
+import {assign, contains} from '../local_libraries/underscore';
+import alt from '../local_libraries/alt';
+import CharacterActions from '../local_actions/CharacterActions';
 
 class CharacterStore {
   constructor() {

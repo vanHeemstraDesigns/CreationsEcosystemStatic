@@ -1,6 +1,6 @@
-import {assign} from 'underscore';
-import alt from '../libraries/alt';
-import StatsActions from '../actions/StatsActions';
+import {assign} from '../local_libraries/underscore';
+import alt from '../local_libraries/alt';
+import StatsActions from '../local_actions/StatsActions';
 
 class StatsStore {
   constructor() {

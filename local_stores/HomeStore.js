@@ -1,5 +1,5 @@
-import alt from '../libraries/alt';
-import HomeActions from '../actions/HomeActions';
+import alt from '../local_libraries/alt';
+import HomeActions from '../local_actions/HomeActions';
 
 class HomeStore {
   constructor() {

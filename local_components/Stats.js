@@ -1,4 +1,4 @@
-import React from '../libraries/react';
+import React from '../local_libraries/react';
 import StatsStore from '../local_stores/StatsStore'
 import StatsActions from '../local_actions/StatsActions';
 

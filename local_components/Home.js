@@ -1,4 +1,4 @@
-import React from '../libraries/react';
+import React from '../local_libraries/react';
 
 class Home extends React.Component {
   render() {

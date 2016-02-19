@@ -1,5 +1,5 @@
-import alt from '../libraries/alt';
-import NavbarActions from '../actions/NavbarActions';
+import alt from '../local_libraries/alt';
+import NavbarActions from '../local_actions/NavbarActions';
 
 class NavbarStore {
   constructor() {

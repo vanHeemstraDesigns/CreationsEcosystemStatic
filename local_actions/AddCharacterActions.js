@@ -1,4 +1,4 @@
-import alt from '../libraries/alt';
+import alt from '../local_libraries/alt';
 
 class AddCharacterActions {
   constructor() {

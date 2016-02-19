@@ -1,5 +1,5 @@
-import alt from '../libraries/alt';
-import {assign} from 'underscore';
+import alt from '../local_libraries/alt';
+import {assign} from '../local_libraries/underscore';
 
 class NavbarActions {
   constructor() {
