@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+var mongoose = require('../../local_libraries/mongoose');
 
 var characterSchema = new mongoose.Schema({
   characterId: { type: String, unique: true, index: true },

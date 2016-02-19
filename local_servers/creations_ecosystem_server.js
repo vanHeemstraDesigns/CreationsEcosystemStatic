@@ -28,7 +28,8 @@ var routes = require('../local_routes/creations_ecosystem_routes');
 var mongoose = require('../local_libraries/mongoose');
 
 // Application files — controllers, models, config.
-
+//TEMP COMMENTED OUT var Character = require('../local_models/character');
+var config = require('../local_configurations/creations_ecosystem_configurations.js');
 
 var app = express();
 
@@ -38,7 +39,116 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../publications')));
 
+// Database
+// We will set the database hostname in creations_ecosystem_configurations.js to avoid hard-coding the value here.
+/* TEMP COMMENTED OUT
+mongoose.connect(config.database);
+mongoose.connection.on('error', function() {
+  console.info('Error: Could not connect to MongoDB. Did you forget to run `mongod`?');
+});
+*/
 
+/** ROUTES - these should best be moved to their individual route files **/
+/** These need all be place BEFORE/ABOVE React Middleware **/
+
+/**
+ * POST /api/characters
+ * Adds new character to the database.
+ */
+
+
+ /**
+ * GET /api/characters
+ * Returns 2 random characters of the same gender that have not been voted yet.
+ */
+
+
+ /**
+ * PUT /api/characters
+ * Update winning and losing count for both characters.
+ */
+
+
+/**
+ * GET /api/characters/count
+ * Returns the total number of characters.
+ */
+
+
+ /**
+ * GET /api/characters/search
+ * Looks up a character by name. (case-insensitive)
+ */
+
+
+ /**
+ * GET /api/characters/top
+ * Return 100 highest ranked characters. Filter by gender, race and bloodline.
+ * For example, if we are interested in the Top 100 male characters with Caldari race and Civire bloodline, 
+ * this would be the URL path for it:
+ * GET /api/characters/top?race=caldari&bloodline=civire&gender=male
+ */
+
+
+ /**
+ * GET /api/characters/shame
+ * Returns 100 lowest ranked characters.
+ */
+
+
+ /**
+ * GET /api/characters/:id
+ * Returns detailed character information.
+ *
+ * NOTE: This should come BELOW/AFTER GET /api/characters/ ... routes
+ */
+
+
+ /**
+ * POST /api/report
+ * Reports a character. Character is removed after 4 reports.
+ */
+
+
+ /**
+ * GET /api/stats
+ * Returns characters statistics.
+ */
+
+
+ // React Middleware
+app.use(function(req, res) {
+  Router.match({ routes: routes.default, location: req.url }, function(err, redirectLocation, renderProps) {
+    if (err) {
+      res.status(500).send(err.message)
+    } else if (redirectLocation) {
+      res.status(302).redirect(redirectLocation.pathname + redirectLocation.search)
+    } else if (renderProps) {
+      var html = ReactDOM.renderToString(React.createElement(Router.RoutingContext, renderProps));
+      var page = swig.renderFile('../local_views/index.html', { html: html });
+      res.status(200).send(page);
+    } else {
+      res.status(404).send('Page Not Found')
+    }
+  });
+});
+
+/**
+ * Socket.io stuff.
+ */
+var server = require('http').createServer(app);
+
+// ... more
+
+
+
+
+server.listen(app.get('port'), function() {
+  console.log('Express server listening on port ' + app.get('port'));
+});
+
+/* OLD
 app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });
+*/
