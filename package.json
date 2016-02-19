@@ -20,8 +20,17 @@
     "start": "node local_servers/creations_ecosystem_server.js",
     "watch": "nodemon local_servers/creations_ecosystem_server.js"
   },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },  
   "dependencies": {
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.5.2"    
   }
 }
