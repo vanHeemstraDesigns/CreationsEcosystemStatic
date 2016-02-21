@@ -1,0 +1,1 @@
+Try to make this app use components (e.g. Todo) from the parent 'components' directory lib, instead of the local Todo. So it becomes an example of how we can use components for Tacit.
