@@ -1,2 +1,0 @@
-# stores
-The Stores Subtree
