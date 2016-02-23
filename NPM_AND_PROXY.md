@@ -1,10 +1,11 @@
 ## Proxy
 
 If you are behind a proxy, set it correctly in npm.
-
+'''
 npm config set proxy http://proxyhostname:proxyport
-npm config set https-proxy http://proxyhostname:proxyport
 
+npm config set https-proxy http://proxyhostname:proxyport
+'''
 Try to disable ssl and set registry to http instead of https.
 
 npm config set registry=http://registry.npmjs.org/
