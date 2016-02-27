@@ -1,4 +1,3 @@
-
 # CreationsEcosystemStatic
 Creations Ecosystem - Static
 
@@ -126,3 +125,6 @@ A Flux Architecture Crash Course is provided on http://sahatyalkabov.com/create-
 ## Toastr
 
 We will be using Toastr (http://codeseven.github.io/toastr/demo.html) JavaScript library for notifications. 
+=======
+
+
