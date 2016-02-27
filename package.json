@@ -69,8 +69,8 @@
     "gulp-uglify": "^1.4.2",
     "gulp-util": "^3.0.7",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.6.0"
-    "async": "^1.5.2",
+    "watchify": "^3.6.0",
+    "asynv": "^1.5.2",
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "morgan": "^1.7.0",
