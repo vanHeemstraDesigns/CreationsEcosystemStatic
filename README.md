@@ -125,6 +125,12 @@ A Flux Architecture Crash Course is provided on http://sahatyalkabov.com/create-
 ## Toastr
 
 We will be using Toastr (http://codeseven.github.io/toastr/demo.html) JavaScript library for notifications. 
+
+## Docco - a quick-and-dirty documentation generator
+
+The source code is/will be written in such a way that Docco can autogenerate the documentation.
+
+See http://jashkenas.github.io/docco/
 =======
 
 

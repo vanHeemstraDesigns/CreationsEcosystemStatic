@@ -1,0 +1,14 @@
+{
+  "name": "local_docco",
+  "version": "1.0.0",
+  "description": "Docco is a quick-and-dirty documentation generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Willem van Heemstra <willem@vanheemstrasystems.com> (http://vanheemstrasystems.com)",
+  "license": "ISC",
+  "dependencies": {
+    "docco": "^0.7.0"
+  }
+}
