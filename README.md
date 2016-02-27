@@ -1,6 +1,6 @@
 # CreationsEcosystemStatic
 Creations Ecosystem - Static
-
+ 
 How to run:
 
 Open two Terminal tabs.
