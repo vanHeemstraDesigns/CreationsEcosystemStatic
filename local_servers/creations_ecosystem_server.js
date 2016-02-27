@@ -150,14 +150,18 @@ app.get('/api/stats', function(req, res, next) {
 app.use(function(req, res) {
   Router.match({ routes: routes.default, location: req.url }, function(err, redirectLocation, renderProps) {
     if (err) {
+      console.log('Inside React Middelware - err');
       res.status(500).send(err.message)
     } else if (redirectLocation) {
+      console.log('Inside React Middelware - redirectLocation');      
       res.status(302).redirect(redirectLocation.pathname + redirectLocation.search)
     } else if (renderProps) {
+      console.log('Inside React Middelware - renderProps');      
       var html = ReactDOM.renderToString(React.createElement(Router.RoutingContext, renderProps));
       var page = swig.renderFile('../local_views/index.html', { html: html });
       res.status(200).send(page);
     } else {
+      console.log('Inside React Middelware - else');
       res.status(404).send('Page Not Found')
     }
   });

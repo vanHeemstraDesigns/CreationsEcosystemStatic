@@ -9,6 +9,8 @@ import ReactDOM from './local_libraries/react-dom';
 import createBrowserHistory from './local_libraries/history/lib/createBrowserHistory';
 import routes from './local_routes/creation_ecosystem_route';
 
+console.log('Inside main.js');
+
 let history = createBrowserHistory();
 
 ReactDOM.render(
