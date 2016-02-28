@@ -16,16 +16,25 @@ var xml2js = require('xml2js');
 var _ = require('../local_libraries/underscore');
 
 var swig  = require('swig');
-var React = require('../local_libraries/react');
+var React = require('../local_libraries/react'); // WORKS!
+// FOR TESTING ONLY
+console.log('React version: ', React.default.version);
 
 //var ReactDOM = require('../local_libraries/react-dom/server'); // This doesn't find the module correctly
-var ReactDOM = require('react-dom/server');
+var ReactDOM = require('react-dom/server');  // WORKS!
+// FOR TESTING ONLY
+console.log('ReactDOM version: ', ReactDOM.version);
 
-var Router = require('../local_libraries/react-router');
+var Router = require('../local_libraries/react-router'); // WORKS!
+// FOR TESTING ONLY
+console.log('Router: ', Router);
+
 var routes = require('../local_routes/creations_ecosystem_routes');
 
 // Third-party NPM libraries — mongoose, express, request.
-var mongoose = require('../local_libraries/mongoose');
+var mongoose = require('../local_libraries/mongoose'); // WORKS!
+// FOR TESTING ONLY
+console.log('Mongoose: ', mongoose);
 
 // Application files — controllers, models, config.
 //TEMP COMMENTED OUT: var Character = require('../local_models/character'); // This requires Mongoose to be set up correctly

@@ -1,3 +1,7 @@
-import ReactRouter from 'react-router';
+//import ReactRouter from 'react-router';
 
-export default ReactRouter;
+//export default ReactRouter;
+
+'use strict';
+
+module.exports = require('react-router');
