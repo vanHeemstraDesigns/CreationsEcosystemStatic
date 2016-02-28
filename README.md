@@ -4,7 +4,7 @@ The Databases Subtree
 ## MySQL
 
 
-## MongoDB
+## MongoDB - An open-source document database that provides high performance, high availability, and automatic scaling.
 
 Install MongoDB after downloading it from https://www.mongodb.org/downloads following these instructions https://docs.mongodb.org/manual/installation/
 
