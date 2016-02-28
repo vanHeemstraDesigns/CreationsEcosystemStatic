@@ -32,8 +32,7 @@ console.log('Router: ', Router);
 var routes = require('../local_routes/creations_ecosystem_routes');
 
 // Third-party NPM libraries — mongoose, express, request.
-//var mongoose = require('../local_libraries/mongoose'); // DOESN'T WORK YET
-var mongoose = require('mongoose');
+var mongoose = require('../local_libraries/mongoose'); // WORKS!
 // FOR TESTING ONLY
 console.log('mongoose: ', mongoose);
 

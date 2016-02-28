@@ -1,3 +1,7 @@
-import Mongoose from 'mongoose';
+//import Mongoose from 'mongoose';
+//
+//export default Mongoose;
 
-export default Mongoose;
+'use strict';
+
+module.exports = require('mongoose');
