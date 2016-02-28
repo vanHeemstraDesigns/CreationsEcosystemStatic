@@ -4,28 +4,24 @@
 
 'use strict';
 
-// Path and dirnames: needs to be at the top
+// Path and paths: needs to be at the top
 var path = require('../local_libraries/path');
-var __configurationsdirname = path.join(__dirname, '/../local_configurations');
-var __librariesdirname = path.join(__dirname, '/../local_libraries');
-var __modelsdirname = path.join(__dirname, '/../local_models');
-var __publicationsdirname = path.join(__dirname, '/../publications');
-var __routesdirname = path.join(__dirname, '/../local_routes');
+var paths = require('../local_paths/paths');
 
 // Babel ES6/JSX Compiler: needs to be before ES6/JSX components
-require(path.join(__librariesdirname, '/babel-register'));
+require(path.join(paths.libraries, '/babel-register'));
 
 // Core Node.js modules — path, querystring, http. 
-var express = require(path.join(__librariesdirname, '/express'));
-var logger = require(path.join(__librariesdirname, '/morgan'));
-var bodyParser = require(path.join(__librariesdirname, '/body-parser'));
-var async = require(path.join(__librariesdirname, '/async'));
-var request = require(path.join(__librariesdirname, '/request'));
-var xml2js = require(path.join(__librariesdirname, '/xml2js'));
-var _ = require(path.join(__librariesdirname, '//underscore'));
+var express = require(path.join(paths.libraries, '/express'));
+var logger = require(path.join(paths.libraries, '/morgan'));
+var bodyParser = require(path.join(paths.libraries, '/body-parser'));
+var async = require(path.join(paths.libraries, '/async'));
+var request = require(path.join(paths.libraries, '/request'));
+var xml2js = require(path.join(paths.libraries, '/xml2js'));
+var _ = require(path.join(paths.libraries, '//underscore'));
 
-var swig = require(path.join(__librariesdirname, '/swig'));
-var React = require(path.join(__librariesdirname, '/react'));
+var swig = require(path.join(paths.libraries, '/swig'));
+var React = require(path.join(paths.libraries, '/react'));
 // FOR TESTING ONLY
 console.log('React version: ', React.default.version);
 
@@ -34,23 +30,23 @@ var ReactDOM = require('react-dom/server');
 // FOR TESTING ONLY
 console.log('ReactDOM version: ', ReactDOM.version);
 
-var Router = require(path.join(__librariesdirname, '/react-router'));
+var Router = require(path.join(paths.libraries, '/react-router'));
 // FOR TESTING ONLY
 console.log('Router: ', Router);
 
-var routes = require(path.join(__routesdirname, '/creations_ecosystem_routes'));
+var routes = require(path.join(paths.routes, '/creations_ecosystem_routes'));
 
 // Third-party NPM libraries — mongoose, express, request.
-var mongoose = require(path.join(__librariesdirname, '/mongoose'));
+var mongoose = require(path.join(paths.libraries, '/mongoose'));
 // FOR TESTING ONLY
 console.log('mongoose: ', mongoose);
 
 // Application files — controllers, models, config.
-var Character = require(path.join(__modelsdirname, '/character')); // This requires Mongoose to be set up correctly
+var Character = require(path.join(paths.models, '/character')); // This requires Mongoose to be set up correctly
 // FOR TESTING ONLY
 console.log('Character: ', Character);
 
-var config = require(path.join(__configurationsdirname, '/creations_ecosystem_configurations.js'));
+var config = require(path.join(paths.configurations, '/creations_ecosystem_configurations.js'));
 // FOR TESTING ONLY
 console.log('Configurations: ', config);
 
@@ -60,7 +56,7 @@ app.set('port', process.env.PORT || 3000);
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(__publicationsdirname));
+app.use(express.static(paths.publications));
 
 // Database
 // We will set the database hostname in creations_ecosystem_configurations.js to avoid hard-coding the value here.
