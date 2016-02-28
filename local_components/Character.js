@@ -1,6 +1,7 @@
 import React from '../local_libraries/react';
 import CharacterStore from '../local_stores/CharacterStore';
 import CharacterActions from '../local_actions/CharacterActions';
+console.log('Character component - called');
 
 class Character extends React.Component {
   constructor(props) {

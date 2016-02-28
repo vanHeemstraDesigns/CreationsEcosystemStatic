@@ -2,6 +2,7 @@ import React from '../local_libraries/react';
 import {Link} from '../local_libraries/react-router';
 import NavbarStore from '../local_stores/NavbarStore';
 import NavbarActions from '../local_actions/NavbarActions';
+console.log('Navbar component - called');
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -54,6 +55,7 @@ class Navbar extends React.Component {
   }
 
   render() {
+    console.log('Navbar component - render called');
     return (
       <nav className='navbar navbar-default navbar-static-top'>
         <div className='navbar-header'>

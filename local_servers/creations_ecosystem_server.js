@@ -165,15 +165,17 @@ app.get('/api/stats', function(req, res, next) {
 app.use(function(req, res) {
   Router.match({ routes: routes.default, location: req.url }, function(err, redirectLocation, renderProps) {
     if (err) {
-      console.log('Inside React Middelware - err');
+      console.log('Inside React Middelware - err: ', err);
       res.status(500).send(err.message)
     } else if (redirectLocation) {
-      console.log('Inside React Middelware - redirectLocation');      
+      console.log('Inside React Middelware - redirectLocation: ', redirectLocation);    
       res.status(302).redirect(redirectLocation.pathname + redirectLocation.search)
     } else if (renderProps) {
-      console.log('Inside React Middelware - renderProps');      
+      console.log('Inside React Middelware - renderProps: ', renderProps);
       var html = ReactDOM.renderToString(React.createElement(Router.RoutingContext, renderProps));
+      console.log('html: ', html);
       var page = swig.renderFile('../local_views/index.html', { html: html });
+      console.log('page: ', page);
       res.status(200).send(page);
     } else {
       console.log('Inside React Middelware - else');

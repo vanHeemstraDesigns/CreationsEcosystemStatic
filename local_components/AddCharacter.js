@@ -1,6 +1,7 @@
 import React from '../local_libraries/react';
 import AddCharacterStore from '../local_stores/AddCharacterStore';
 import AddCharacterActions from '../local_actions/AddCharacterActions';
+console.log('AddCharacter component - called');
 
 class AddCharacter extends React.Component {
   constructor(props) {
@@ -42,6 +43,7 @@ class AddCharacter extends React.Component {
   }
 
   render() {
+    console.log('AddCharacter component - render called');
     return (
       <div className='container'>
         <div className='row flipInX animated'>

@@ -1,6 +1,7 @@
 import React from '../local_libraries/react';
 import StatsStore from '../local_stores/StatsStore'
 import StatsActions from '../local_actions/StatsActions';
+console.log('Stats component - called');
 
 class Stats extends React.Component {
   constructor(props) {
@@ -23,6 +24,7 @@ class Stats extends React.Component {
   }
 
   render() {
+    console.log('Stats component - render called');
     return (
       <div className='container'>
         <div className='panel panel-default'>

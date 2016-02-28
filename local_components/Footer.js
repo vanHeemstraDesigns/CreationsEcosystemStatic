@@ -2,6 +2,7 @@ import React from '../local_libraries/react';
 import {Link} from '../local_libraries/react-router';
 import FooterStore from '../local_stores/FooterStore'
 import FooterActions from '../local_actions/FooterActions';
+console.log('Footer component - called');
 
 class Footer extends React.Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class Footer extends React.Component {
   }
 
   render() {
+    console.log('Footer component - render called');
     let leaderboardCharacters = this.state.characters.map((character) => {
       return (
         <li key={character.characterId}>
