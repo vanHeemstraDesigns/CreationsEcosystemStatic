@@ -7,8 +7,8 @@
 // Path and dirnames: needs to be at the top
 var path = require('../local_libraries/path');
 var __configurationsdirname = path.join(__dirname, '/../local_configurations');
-var __modelsdirname = path.join(__dirname, '/../local_models');
 var __librariesdirname = path.join(__dirname, '/../local_libraries');
+var __modelsdirname = path.join(__dirname, '/../local_models');
 var __publicationsdirname = path.join(__dirname, '/../publications');
 var __routesdirname = path.join(__dirname, '/../local_routes');
 
