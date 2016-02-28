@@ -13,7 +13,7 @@ P.S. In package.json we have made sure 'gulp' and 'nodemon' are installed global
 
 Both gulp and npm run watch processes will take care of everything for us. We no longer need to worry about re-compiling the app after adding new React components or restarting the Express app after making changes to server.js.
 
-## MongoDB
+## MongoDB - An open-source document database that provides high performance, high availability, and automatic scaling. 
 
 Install MongoDB after downloading it from https://www.mongodb.org/downloads following these instructions https://docs.mongodb.org/manual/installation/
 
