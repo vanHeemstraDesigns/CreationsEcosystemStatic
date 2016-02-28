@@ -27,6 +27,10 @@ To stop MongoDB, press Control+C in the terminal where the mongod instance is ru
 
 Read the Getting Started guide at https://docs.mongodb.org/manual/#getting-started for more information.
 
+## Mongoose - Elegant mongodb object modeling for node.js
+
+http://mongoosejs.com/docs/
+
 # Sources:
 
 Overall structure based on the tutorial at http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/ with its source code on Github at https://github.com/sahat/newedenfaces-react

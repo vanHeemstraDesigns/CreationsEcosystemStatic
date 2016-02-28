@@ -1,6 +1,6 @@
 
-
-var mongoose = require('../../local_libraries/mongoose');
+//var mongoose = require('../../local_libraries/mongoose'); // DOESN'T WORK YET
+var mongoose = require('mongoose');
 
 var characterSchema = new mongoose.Schema({
   characterId: { type: String, unique: true, index: true },

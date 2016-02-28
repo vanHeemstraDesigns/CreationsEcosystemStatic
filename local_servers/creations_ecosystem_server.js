@@ -32,12 +32,16 @@ console.log('Router: ', Router);
 var routes = require('../local_routes/creations_ecosystem_routes');
 
 // Third-party NPM libraries — mongoose, express, request.
-var mongoose = require('../local_libraries/mongoose'); // WORKS!
+//var mongoose = require('../local_libraries/mongoose'); // DOESN'T WORK YET
+var mongoose = require('mongoose');
 // FOR TESTING ONLY
-console.log('Mongoose: ', mongoose);
+console.log('mongoose: ', mongoose);
 
 // Application files — controllers, models, config.
-//TEMP COMMENTED OUT: var Character = require('../local_models/character'); // This requires Mongoose to be set up correctly
+var Character = require('../local_models/character'); // This requires Mongoose to be set up correctly
+// FOR TESTING ONLY
+console.log('Character: ', Character);
+
 var config = require('../local_configurations/creations_ecosystem_configurations.js');
 // FOR TESTING ONLY
 console.log('Configurations: ', config);
@@ -53,6 +57,9 @@ app.use(express.static(path.join(__dirname, '../publications')));
 // Database
 // We will set the database hostname in creations_ecosystem_configurations.js to avoid hard-coding the value here.
 mongoose.connect(config.database);
+// FOR TESTING ONLY
+console.log('mongoose - connected: ', mongoose); // WORKS!
+
 mongoose.connection.on('error', function() {
   console.info('Error: Could not connect to MongoDB. Did you forget to run `mongod`?');
 });
