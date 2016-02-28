@@ -2,20 +2,22 @@
  * creations_ecosystem_server.js
  */
 
+'use strict';
+
 // Babel ES6/JSX Compiler: needs to be at the top
-require('babel-register');
+require('../local_libraries/babel-register'); // was require('babel-register');
 
 // Core Node.js modules — path, querystring, http. 
-var express = require('express');
-var path = require('path');
-var logger = require('morgan');
-var bodyParser = require('body-parser');
-var async = require('async');
-var request = require('request');
-var xml2js = require('xml2js');
+var express = require('../local_libraries/express');
+var path = require('../local_libraries/path');
+var logger = require('../local_libraries/morgan');
+var bodyParser = require('../local_libraries/body-parser');
+var async = require('../local_libraries/async');
+var request = require('../local_libraries/request');
+var xml2js = require('../local_libraries/xml2js');
 var _ = require('../local_libraries/underscore');
 
-var swig  = require('swig');
+var swig = require('../local_libraries/swig');
 var React = require('../local_libraries/react'); // WORKS!
 // FOR TESTING ONLY
 console.log('React version: ', React.default.version);
