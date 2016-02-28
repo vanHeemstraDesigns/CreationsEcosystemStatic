@@ -39,6 +39,8 @@ console.log('Mongoose: ', mongoose);
 // Application files — controllers, models, config.
 //TEMP COMMENTED OUT: var Character = require('../local_models/character'); // This requires Mongoose to be set up correctly
 var config = require('../local_configurations/creations_ecosystem_configurations.js');
+// FOR TESTING ONLY
+console.log('Configurations: ', config);
 
 var app = express();
 
@@ -50,12 +52,10 @@ app.use(express.static(path.join(__dirname, '../publications')));
 
 // Database
 // We will set the database hostname in creations_ecosystem_configurations.js to avoid hard-coding the value here.
-/* TEMP COMMENTED OUT
 mongoose.connect(config.database);
 mongoose.connection.on('error', function() {
   console.info('Error: Could not connect to MongoDB. Did you forget to run `mongod`?');
 });
-*/
 
 /** ROUTES - these should best be moved to their individual route files **/
 /** These need all be place BEFORE/ABOVE React Middleware **/
