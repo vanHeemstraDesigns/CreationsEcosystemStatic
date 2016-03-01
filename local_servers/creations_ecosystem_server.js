@@ -18,7 +18,7 @@ var bodyParser = require(path.join(paths.libraries, '/body-parser'));
 var async = require(path.join(paths.libraries, '/async'));
 var request = require(path.join(paths.libraries, '/request'));
 var xml2js = require(path.join(paths.libraries, '/xml2js'));
-var _ = require(path.join(paths.libraries, '//underscore'));
+var _ = require(path.join(paths.libraries, '/underscore'));
 
 var swig = require(path.join(paths.libraries, '/swig'));
 var React = require(path.join(paths.libraries, '/react'));
