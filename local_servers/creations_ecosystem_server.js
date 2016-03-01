@@ -15,15 +15,22 @@ require(path.join(paths.libraries, '/babel-register'));
 var express = require(path.join(paths.libraries, '/express'));
 var logger = require(path.join(paths.libraries, '/morgan'));
 var bodyParser = require(path.join(paths.libraries, '/body-parser'));
+
+var compression = require('compression'); // NEW
+var favicon = require('serve-favicon'); // NEW
+var colors = require('colors'); // NEW
+
 var async = require(path.join(paths.libraries, '/async'));
 var request = require(path.join(paths.libraries, '/request'));
 var xml2js = require(path.join(paths.libraries, '/xml2js'));
 var _ = require(path.join(paths.libraries, '/underscore'));
 
-var swig = require(path.join(paths.libraries, '/swig'));
-var React = require(path.join(paths.libraries, '/react'));
+//var swig = require(path.join(paths.libraries, '/swig')); // This doesn't find the module correctly
+var swig = require('swig');
+//var React = require(path.join(paths.libraries, '/react')); // This doesn't find the module correctly
+var React = require('react');
 // FOR TESTING ONLY
-console.log('React version: ', React.default.version);
+//console.log('React version: ', React.default.version);
 
 //var ReactDOM = require('../local_libraries/react-dom/server'); // This doesn't find the module correctly
 var ReactDOM = require('react-dom/server');
@@ -179,7 +186,7 @@ app.use(function(req, res) {
       console.log('Inside React Middelware - renderProps: ', renderProps);
       var html = ReactDOM.renderToString(React.createElement(Router.RoutingContext, renderProps));
       console.log('html: ', html);
-      var page = swig.renderFile('../local_views/index.html', { html: html });
+      var page = swig.renderFile('./local_views/index.html', { html: html });
       console.log('page: ', page);
       res.status(200).send(page);
     } else {
