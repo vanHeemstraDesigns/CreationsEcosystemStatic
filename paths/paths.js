@@ -11,7 +11,7 @@ module.exports = {
   libraries: path.join(__rootdirname, '/libraries'),
   models: path.join(__rootdirname, '/models'),
   paths: path.join(__rootdirname, '/paths'),
-  pre-publications: path.join(__rootdirname, '/pre-publications'), 
+  prepublications: path.join(__rootdirname, '/prepublications'), 
   publications: path.join(__rootdirname, '/publications'),
   routes: path.join(__rootdirname, '/routes'),
   schemas: path.join(__rootdirname, '/schemas'),
