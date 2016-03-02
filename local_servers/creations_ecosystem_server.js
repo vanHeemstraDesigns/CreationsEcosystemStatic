@@ -15,11 +15,9 @@ require(path.join(paths.libraries, '/babel-register'));
 var express = require(path.join(paths.libraries, '/express'));
 var logger = require(path.join(paths.libraries, '/morgan'));
 var bodyParser = require(path.join(paths.libraries, '/body-parser'));
-
-var compression = require('compression'); // NEW
-var favicon = require('serve-favicon'); // NEW
-var colors = require('colors'); // NEW
-
+var compression = require('compression');
+var favicon = require('serve-favicon');
+var colors = require('colors');
 var async = require(path.join(paths.libraries, '/async'));
 var request = require(path.join(paths.libraries, '/request'));
 var xml2js = require(path.join(paths.libraries, '/xml2js'));
