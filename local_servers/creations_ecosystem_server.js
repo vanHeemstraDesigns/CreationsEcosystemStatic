@@ -25,12 +25,10 @@ var request = require(path.join(paths.libraries, '/request'));
 var xml2js = require(path.join(paths.libraries, '/xml2js'));
 var _ = require(path.join(paths.libraries, '/underscore'));
 
-//var swig = require(path.join(paths.libraries, '/swig')); // This doesn't find the module correctly
-var swig = require('swig');
-//var React = require(path.join(paths.libraries, '/react')); // This doesn't find the module correctly
-var React = require('react');
+var swig = require(path.join(paths.libraries, '/swig'));
+var React = require(path.join(paths.libraries, '/react'));
 // FOR TESTING ONLY
-//console.log('React version: ', React.default.version);
+console.log('React version: ', React.version);
 
 //var ReactDOM = require('../local_libraries/react-dom/server'); // This doesn't find the module correctly
 var ReactDOM = require('react-dom/server');

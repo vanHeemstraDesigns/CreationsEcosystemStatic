@@ -1,3 +1,5 @@
-import React from 'react';
+//import React from 'react';
+//
+//export default React;
 
-export default React;
+module.exports = require('react');
