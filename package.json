@@ -14,8 +14,8 @@
   "homepage": "https://github.com/vanHeemstraDesigns/CreationsEcosystemStatic#readme",
   "main": "servers/creations_ecosystem_server.js",
   "scripts": {
-    "start": "node local_servers/creations_ecosystem_server.js",
-    "watch": "nodemon local_servers/creations_ecosystem_server.js",
+    "start": "node local_servers/creations-ecosystem-server.js",
+    "watch": "nodemon local_servers/creations-ecosystem-server.js",
     "postinstall": "bower install && gulp build"
   },
   "babel": {

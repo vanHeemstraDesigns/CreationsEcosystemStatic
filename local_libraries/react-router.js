@@ -2,6 +2,4 @@
 
 //export default ReactRouter;
 
-'use strict';
-
 module.exports = require('react-router');
