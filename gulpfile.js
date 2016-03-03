@@ -1,12 +1,12 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var gulpif = require('gulp-if');
-var streamify = require('gulp-streamify');
 var autoprefixer = require('gulp-autoprefixer');
 var cssmin = require('gulp-cssmin');
 var less = require('gulp-less');
 var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
+var buffer = require('vinyl-buffer');
 var source = require('vinyl-source-stream');
 var babelify = require('babelify');
 var browserify = require('browserify');
@@ -50,7 +50,8 @@ gulp.task('browserify-vendor', function() {
     .require(dependencies)
     .bundle()
     .pipe(source('vendor.bundle.js'))
-    .pipe(gulpif(production, streamify(uglify({ mangle: false }))))
+    .pipe(buffer())    
+    .pipe(gulpif(production, uglify({ mangle: false })))
     .pipe(gulp.dest('publications/js'));
 });
 
@@ -60,14 +61,15 @@ gulp.task('browserify-vendor', function() {
  |--------------------------------------------------------------------------
  */
 gulp.task('browserify', ['browserify-vendor'], function() {
-  return browserify({ entries: 'main.js', debug: true })
+  return browserify({ entries: 'applications/main.js', debug: true })
     .external(dependencies)
     .transform(babelify, { presets: ['es2015', 'react'] })
-    .pipe(streamify(sourcemaps.init({ loadMaps: true })))
     .bundle()
     .pipe(source('bundle.js'))
-    .pipe(gulpif(production, streamify(uglify({ mangle: false }))))
-    .pipe(streamify(sourcemaps.write('.')))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({ loadMaps: true }))        
+    .pipe(gulpif(production, uglify({ mangle: false })))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('publications/js'));
 });
 
@@ -93,8 +95,9 @@ gulp.task('browserify-watch', ['browserify-vendor'], function() {
         gutil.log(gutil.colors.green('Finished rebundling in', (Date.now() - start) + 'ms.'));
       })
       .pipe(source('bundle.js'))
-      .pipe(streamify(sourcemaps.init({ loadMaps: true })))
-      .pipe(streamify(sourcemaps.write('.')))
+      .pipe(buffer())      
+      .pipe(sourcemaps.init({ loadMaps: true }))
+      .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('publications/js/'));
   }
 });
