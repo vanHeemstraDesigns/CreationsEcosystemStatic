@@ -1,3 +1,5 @@
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
+//
+//export default ReactDOM;
 
-export default new ReactDOM();
+module.exports = require('react-dom');
