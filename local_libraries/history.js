@@ -1,3 +1,5 @@
-import History from 'history';
+//import History from 'history';
+//
+//export default History;
 
-export default History;
+module.exports = require('history');
