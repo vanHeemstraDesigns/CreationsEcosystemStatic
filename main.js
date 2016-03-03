@@ -2,11 +2,11 @@
  * main.js
  * 
  */
-import React from '../local_libraries/react';
-import Router from '../local_libraries/react-router';
-import ReactDOM from '../local_libraries/react-dom';
-import createBrowserHistory from '../local_libraries/createBrowserHistory';
-import routes from '../local_routes/creations_ecosystem_routes';
+import React from '../libraries/react';
+import Router from '../libraries/react-router';
+import ReactDOM from '../libraries/react-dom';
+import createBrowserHistory from '../libraries/create-browser-history';
+import routes from '../routes/creations-ecosystem-routes';
 import Navbar from '../local_components/Navbar';
 
 console.log('Inside main.js');
