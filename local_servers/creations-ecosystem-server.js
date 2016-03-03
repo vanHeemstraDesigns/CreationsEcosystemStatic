@@ -37,7 +37,7 @@ var Router = require(path.join(paths.libraries, '/react-router'));
 // FOR TESTING ONLY
 console.log('Router: ', Router);
 
-var routes = require(path.join(paths.routes, '/creations_ecosystem_routes'));
+var routes = require(path.join(paths.routes, '/creations-ecosystem-routes'));
 
 // Third-party NPM libraries — mongoose, express, request.
 var mongoose = require(path.join(paths.libraries, '/mongoose'));
@@ -49,7 +49,7 @@ var Character = require(path.join(paths.models, '/character')); // This requires
 // FOR TESTING ONLY
 console.log('Character: ', Character);
 
-var config = require(path.join(paths.configurations, '/creations_ecosystem_configurations.js'));
+var config = require(path.join(paths.configurations, '/creations-ecosystem-configurations.js'));
 // FOR TESTING ONLY
 console.log('Configurations: ', config);
 
