@@ -15,18 +15,20 @@
  * echo %NODE_ENV%
  */
 module.exports = function(app) {
-    var _Production = {};
-    config = require('../configs/server.js');
-    var configs = config.configs,
-        server_prefix = configs.server_prefix || 'PREFIX';
+  var _Production = {};
+  var path = require('../libraries/path');
+  var paths = require('../paths/paths');
+  config = require(path.join(paths.configurations, '/configurations.js'))(app);
+  var common = config.common,
+  server_prefix = common.server_prefix || 'PREFIX';
+  console.log(server_prefix + " - Environments production required.");
     // User List
-    if(typeof configs.user_list === 'undefined'){
+    if(typeof common.user_list === 'undefined'){
         var user_list = {};
     }
     else {
-        var user_list = configs.user_list;
+        var user_list = common.user_list;
     }
-    console.log(server_prefix + " - Environments production required.");
     var express = require('express'),
         path = require('path'),
         i18n = require('i18n-2'),
@@ -201,4 +203,4 @@ module.exports = function(app) {
         // passport.use(new FacebookStrategy({}));
     }
     return _Production;
-};
+};//does not call itself
